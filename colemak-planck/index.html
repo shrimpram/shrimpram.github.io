@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/main.css"/>
+  <title>The 40% Colemak Planck</title>
+</head>
+<body>
+  <header>
+    <h1>The 40% Colemak Planck</h1>
+  </header>
+  <main>
+    
+<article><p>A few years ago, after deciding to build my own mechanical keyboard and
+shopping around for a while attempting the near impossible task of
+choosing one build from the infinite combinations of parts available, I
+finally chose to build an <a href="https://olkb.com/collections/planck">OLKB
+Planck</a>. This post explains the
+thoughts that went into building it as well as the parts used and
+layouts.</p>
+<h2>The Motive</h2>
+<p>One of the main reasons I went the full custom route was to better allow
+customization of my keyboard's layout. I had been learning and slowly
+transitioning to using <a href="https://colemak.com/">Colemak</a> full time, and
+having the ability to customize my keyboard down to its layout would
+better enable me to use Colemak without needing to install third-party
+keyboard layouts. I also used it as a tool to speed up my learning, as
+forcing myself to use Colemak without the option to easily switch
+layouts back to QWERTY would build muscle memory faster and help me get
+back to my normal typing speed.</p>
+<p>The other main reason for choosing this particular style of keyboard
+also had to do with the layout. Being able to use a custom layout
+enabled me to fully utilize things such as layers to make my keyboard
+more ergonomic. The idea behind layers is that rather than moving your
+fingers physically across the keyboard to reach keys such as arrows,
+f-keys, media keys, etc. you hold down modifiers to bring those keys to
+you. This relieves a lot of the strain on your fingers when typing as
+they don't have to move around as much to type the same characters.
+<a href="https://youtu.be/AKGXZ1ReU54">&quot;Tiny Keyboards: An Explanation&quot;</a> is a
+great video that explains the logic behind this, and the tiny keyboard
+shown in the video is also a 40% ortholinear, just like the Planck.</p>
+<h2>The Parts</h2>
+<p>(A quick disclaimer that I'm not affiliated with any of the companies
+listed below nor is this an endorsement of their products but simply a
+blog post about my personal keyboard.)</p>
+<p>With that out of the way this build was based mainly around the EOTW
+Planck, and as such uses parts from that version. However, at the time I
+was building it the PCB and plates compatible with the EOTW bottom plate
+were out of stock on the <a href="https://olkb.com">OLKB website</a> so I had to
+buy them from <a href="https://drop.com">Drop</a>. I went with an XDA keycap set
+since I really liked how low they sat on the keyboard and thought they
+would contribute to a clean, minimal look for the build especially since
+it wouldn't have a case, just a bottom plate.</p>
+<ul>
+<li><a href="https://olkb.com/products/planck-eotw-bottom-plate">EOTW Bottom Plate from
+OLKB</a></li>
+<li><a href="https://drop.com/buy/planck-mechanical-keyboard">Planck kit from
+Drop</a></li>
+<li><a href="https://drop.com/buy/drop-mito-xda-canvas-keycap-set">Drop + Mito XDA Canvas
+keycaps</a></li>
+<li><a href="https://novelkeys.com/products/nk_-cream-series">NovelKeys Cream
+switches</a></li>
+</ul>
+<p>As for other miscellaneous stuff I filmed and lubed the switches myself,
+which for my first time ever building a keyboard let alone modding
+switches turned out better than expected.</p>
+<ul>
+<li><a href="https://www.ashkeebs.com/product/tx-switch-films/">0.125mm TX Switch
+Films</a></li>
+<li><a href="https://www.ashkeebs.com/product/205g0-switch-lubricant/">Krytox
+205g0</a></li>
+</ul>
+<h2>The Layout</h2>
+<p>A json file of my keymap to use with <a href="https://config.qmk.fm">QMK
+Configurator</a> can be found in my <a href="https://github.com/shrimpram/dotfiles">dotfiles
+repo</a> on Github <a href="https://raw.githubusercontent.com/Shrimpram/dotfiles/master/colemak_planck.json">(raw
+file)</a>.</p>
+<h3>Layer 0</h3>
+<p><img src="../img/olkb-planck/layer-0.png" alt="layer 0"></p>
+<p>This is the default Colemak layer. The bottom row has modifier keys as
+well as the different layer keys to change between layers. There is a
+backspace where caps lock is normally located since the former is much
+more useful than the latter and I have caps lock on another layer.
+Another way QMK helps me save space is with the two shift keys.
+Normally, when pressed and released these two keys act as the key code
+in parentheses. The left shift is an escape key and the right shift is a
+slash key. However, when held while pressing another key, they act as
+shift keys and I can type uppercase letters.</p>
+<h3>Layer 1</h3>
+<p><img src="../img/olkb-planck/layer-1.png" alt="layer 1"></p>
+<p>This is a QWERTY layer I have just in case, which I access by pressing
+<code>MO(4)</code> and then the spacebar. The only difference is in the alphas
+since all the modifiers and other keys have the <code>KC_TRNS</code> code which
+makes them transparent to QMK so they inherit the keycode of the next
+layer below them.</p>
+<h3>Layer 2</h3>
+<p><img src="../img/olkb-planck/layer-2.png" alt="layer 2"></p>
+<p>This is a function and numpad layer. I opted for a numpad instead of a
+number row since at the time I was taking an accounting class and having
+a numpad allowed me to work much faster than a number row. The layout is
+fairly standard, with math operators next to the numbers as well as two
+enter keys since I couldn't figure out what else to place there and it's
+much easier to hit with the palm of my hand while keeping my fingers on
+the numpad.</p>
+<h3>Layer 3</h3>
+<p><img src="../img/olkb-planck/layer-3.png" alt="layer 3"></p>
+<p>This layer is an extension of layer 2 with symbols instead of
+numbers/f-keys. It also has some other miscellaneous useful keys such as
+delete, caps lock, and the grave/tilde key. These other miscellaneous
+keys fit well here since I access this layer with <code>TT(3)</code> which is right
+next to the spacebar.</p>
+<h3>Layer 4</h3>
+<p><img src="../img/olkb-planck/layer-4.png" alt="layer 4"></p>
+<p>This layer has all my media controls as well as the toggle between
+Colemak and QWERTY.</p>
+</article>
+
+  </main>
+</body>
+</html>

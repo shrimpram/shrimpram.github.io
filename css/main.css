@@ -1,0 +1,32 @@
+/* Reset some basic elements */
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 10px;
+  padding: 10; }
+
+/**
+ * Basic styling
+ */
+
+body {
+  font-family: "EB Garamond";
+  color: black;
+  background-color: white;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+
+h1 {
+  font-family: "Times New Roman";
+  font-variant: small-caps;
+}
