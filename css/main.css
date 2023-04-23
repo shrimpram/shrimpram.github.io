@@ -52,14 +52,7 @@
  */
 
 body {
-    display: grid;
-    row-gap: 2.5rem;
-    grid-template-columns:
-          7.5rem
-         minmax(0pt, var(--page-width))
-          1fr;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+  margin: 2em;
 }
 
 @media (prefers-color-scheme: light) {
