@@ -12,14 +12,24 @@
     <h1>PGP</h1>
   </header>
   <main>
-    <p>This page will be kept up to date with my latest pgp public key. You can
-download the key
-<a href="https://gist.github.com/Shrimpram/9c75268e25eae09e2dcaac0373767c16/archive/5c2adbf7117835dbb387bf475d49297c6bd88940.zip">here</a>.</p>
-<p>To directly import the key, you can run this command:</p>
-<pre><code class="language-bash">curl -s https://gist.githubusercontent.com/Shrimpram/9c75268e25eae09e2dcaac0373767c16/raw/5c2adbf7117835dbb387bf475d49297c6bd88940/pubkey.asc | gpg --import
+    <p>This page will be kept up to date with my latest PGP public key and have
+instructions on how to download it.</p>
+<h3>Details</h3>
+<ul>
+<li><strong>Type</strong>: PGPv4, rsa4096</li>
+<li><strong>Fingerprint</strong>: EA88 EA07 26E9 6CBF 6365 3966 163B 16EE 76ED 24CE</li>
+</ul>
+<h3>Getting My Key</h3>
+<h4>From a public key server</h4>
+<pre><code class="shell-command language-bash">gpg --keyserver hkps://keys.openpgp.org --recv-key 0x163B16EE76ED24CE
 </code></pre>
-<p>Fingerprint: <code>EA88 EA07 26E9 6CBF 6365  3966 163B 16EE 76ED 24CE</code></p>
-<p>false</p>
+<h4>From my website</h4>
+<p>You can <img src="https://gist.githubusercontent.com/shrimpram/9c75268e25eae09e2dcaac0373767c16/raw/c783661d8a0448f71c7ec664d1a8e23d2ea4f336/pubkey.asc" alt="download my public key"></p>
+<pre><code class="shell-command language-bash">curl -s https://gist.githubusercontent.com/shrimpram/9c75268e25eae09e2dcaac0373767c16/raw/c783661d8a0448f71c7ec664d1a8e23d2ea4f336/pubkey.asc
+</code></pre>
+<p>and then import it into GPG:</p>
+<pre><code class="shell-command language-bash">gpg --import 0x163B16EE76ED24CE.pub.asc
+</code></pre>
 
   </main>
 </body>
