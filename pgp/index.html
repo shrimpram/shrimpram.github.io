@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/normalize.css"/>
   <link rel="stylesheet" href="/css/main.css"/>
+  <link rel="icon" type="image/x-icon" href="../static/favicon.ico">
   <title>PGP</title>
 </head>
 <body>
@@ -24,8 +25,8 @@ instructions on how to download it.</p>
 <pre><code class="shell-command language-language-bash">gpg --keyserver hkps://keys.openpgp.org --recv-key 0x163B16EE76ED24CE
 </code></pre>
 <h4>From my website</h4>
-<p>You can <img src="https://gist.githubusercontent.com/shrimpram/9c75268e25eae09e2dcaac0373767c16/raw/c783661d8a0448f71c7ec664d1a8e23d2ea4f336/pubkey.asc" alt="download my public key"></p>
-<pre><code class="shell-command language-language-bash">curl -s https://gist.githubusercontent.com/shrimpram/9c75268e25eae09e2dcaac0373767c16/raw/c783661d8a0448f71c7ec664d1a8e23d2ea4f336/pubkey.asc
+<p>You can <a href="../static/pgp/0x163B16EE76ED24CE.pub.asc" class="padded">download my public key</a></p>
+<pre><code class="shell-command language-language-bash">curl -s https://shreerammodi.com/pgp/keys/0x163B16EE76ED24CE.pub.asc
 </code></pre>
 <p>and then import it into GPG</p>
 <pre><code class="shell-command language-language-bash">gpg --import 0x163B16EE76ED24CE.pub.asc
