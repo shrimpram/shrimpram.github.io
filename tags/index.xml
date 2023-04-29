@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Shreeram Modi</title>
+    <link>https://shreerammodi.com/tags/</link>
+    <description>Recent content in Tags on Shreeram Modi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://shreerammodi.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tech</title>
+      <link>https://shreerammodi.com/tags/tech/</link>
+      <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://shreerammodi.com/tags/tech/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

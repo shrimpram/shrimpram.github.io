@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://shreerammodi.com/posts/</loc>
+    <lastmod>2022-04-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shreerammodi.com/</loc>
+    <lastmod>2022-04-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shreerammodi.com/tags/</loc>
+    <lastmod>2022-04-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shreerammodi.com/tags/tech/</loc>
+    <lastmod>2022-04-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shreerammodi.com/posts/olkb-planck/</loc>
+    <lastmod>2022-04-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shreerammodi.com/posts/isaac-2-devlog/</loc>
+    <lastmod>2020-09-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shreerammodi.com/about/</loc>
+  </url><url>
+    <loc>https://shreerammodi.com/categories/</loc>
+  </url><url>
+    <loc>https://shreerammodi.com/pgp/</loc>
+  </url>
+</urlset>

@@ -1,37 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/normalize.css"/>
-  <link rel="stylesheet" href="/css/main.css"/>
-  <link rel="icon" type="image/x-icon" href="../static/favicon.ico">
-  <title>PGP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <title>Shreeram Modi</title>
+  <h1 id="site-title"><a href="https://shreerammodi.com" class="padded">Shreeram Modi</a></h1>
 </head>
-<body>
-  <header>
-    <h1>PGP</h1>
-  </header>
-  <main>
-    <p>This page will be kept up to date with my latest PGP public key and have
+
+  <nav>
+
+<a class="padded" href="/about/">About</a>
+
+<a class="padded" href="/pgp/">PGP</a>
+
+<a class="padded" href="/posts/">Posts</a>
+
+</nav>
+
+  <body>
+    <main>
+      
+<p>This page will be kept up to date with my latest PGP public key and have
 instructions on how to download it.</p>
-<h3>Details</h3>
+<h3 id="details">Details</h3>
 <ul>
 <li><strong>Type</strong>: PGPv4, rsa4096</li>
 <li><strong>Fingerprint</strong>: EA88 EA07 26E9 6CBF 6365 3966 163B 16EE 76ED 24CE</li>
 </ul>
-<h3>Getting My Key</h3>
-<h4>From a public key server</h4>
-<pre><code class="shell-command language-language-bash">gpg --keyserver hkps://keys.openpgp.org --recv-key 0x163B16EE76ED24CE
-</code></pre>
-<h4>From my website</h4>
-<p>You can <a href="../static/pgp/0x163B16EE76ED24CE.pub.asc" class="padded">download my public key</a></p>
-<pre><code class="shell-command language-language-bash">curl -O https://shreerammodi.com/static/pgp/0x163B16EE76ED24CE.pub.asc
-</code></pre>
-<p>and then import it into GPG</p>
-<pre><code class="shell-command language-language-bash">gpg --import 0x163B16EE76ED24CE.pub.asc
+<h3 id="getting-my-key">Getting My Key</h3>
+<h4 id="from-a-public-key-server">From a public key server</h4>
+<pre tabindex="0"><code class="language-language-bash" data-lang="language-bash">gpg --keyserver hkps://keys.openpgp.org --recv-key 0x163B16EE76ED24CE
+</code></pre><h4 id="from-my-website">From my website</h4>
+<!-- raw HTML omitted -->
+<pre tabindex="0"><code class="language-language-bash" data-lang="language-bash">curl -O https://shreerammodi.com/static/pgp/0x163B16EE76ED24CE.pub.asc
+</code></pre><p>and then import it into GPG</p>
+<pre tabindex="0"><code class="language-language-bash" data-lang="language-bash">gpg --import 0x163B16EE76ED24CE.pub.asc
 </code></pre>
 
-  </main>
-</body>
+
+    </main>
+  </body>
+  <footer id="site-footer">
+  <div class="footer">
+    <p>© Shreeram Modi.</p>
+  </div>
+</footer>
+
 </html>
