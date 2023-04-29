@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+  {{ partial "head.html" . }}
+  {{ partial "nav.html" . }}
+  <body>
+    <h1>{{ .Title }}</h1>
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+  </body>
+  {{ partial "footer.html" . }}
+</html>
+

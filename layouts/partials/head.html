@@ -1,0 +1,14 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  {{ $normalize := "css/normalize.css" | relURL }}
+  {{ $main := "css/main.css" | relURL }}
+  {{ $favicon := "favicon.ico" | relURL }}
+  <link rel="stylesheet" href="{{ $normalize }}">
+  <link rel="stylesheet" href="{{ $main }}">
+  <link rel="icon" type="image/x-icon" href="{{ $favicon }}">
+
+  <title>{{ .Site.Title }}</title>
+  <h1 id="site-title"><a href="{{ .Site.BaseURL }}" class="padded">{{ .Site.Title }}</a></h1>
+</head>
