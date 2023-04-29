@@ -23,3 +23,5 @@ title = 'Shreeram Modi'
   [markup.goldmark]
     [markup.goldmark.extensions]
       definitionList = true
+      footnote = true
+      typographer = true
