@@ -18,3 +18,8 @@ title = 'Shreeram Modi'
 
 [params]
   homeText = ""
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
