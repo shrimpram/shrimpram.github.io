@@ -1,0 +1,41 @@
+name: hugo build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # Step 1 - Checks-out your repository under $GITHUB_WORKSPACE
+      - name: Checkout
+        uses: actions/checkout@v2
+
+
+      # Step 2 - Sets up the latest version of Hugo
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+
+      # Step 3 - Clean and don't fail
+      - name: Clean public directory
+        run: rm -rf public
+
+
+      # Step 4 - Builds the site using the latest version of Hugo
+      - name: Build
+        run: hugo
+
+
+      # Step 5 - Deploy our generated site to our gh-pages branch
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          cname: shreerammodi.com
